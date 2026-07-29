@@ -1,20 +1,292 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nick Graham is a Chartered Mechanical Engineer working across spacecraft, robotics, electronics, test systems and flight software.">
+    <meta name="theme-color" content="#07131f">
+    <meta property="og:title" content="Nick Graham, CEng | Space Systems Engineer">
+    <meta property="og:description" content="Spacecraft, robotics, flight software and test systems—from first sketch to qualified hardware.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ngrahamspace-ui.github.io/">
+    <meta property="og:image" content="https://ngrahamspace-ui.github.io/assets/portfolio/og-card.png">
+    <meta property="og:image:alt" content="Nick Graham, CEng — Space Systems Engineer">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Nick Graham, CEng | Space Systems Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="home">
+    <header class="site-header" data-header>
+        <a class="brand" href="#top" aria-label="Nick Graham, home">
+            <span class="brand-mark" aria-hidden="true">NG</span>
+            <span>Nick Graham <small>CEng</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+            <span></span><span></span><span></span>
+            <span class="visually-hidden">Open navigation</span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#capabilities">Capabilities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-  <h1>Posts</h1>
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+            <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span class="status-dot"></span> Space systems engineer · Greater Oxford</p>
+                <h1>Building the hardware<br>that makes <em>missions move.</em></h1>
+                <p class="hero-lede">I’m Nick Graham, a Chartered Mechanical Engineer working across spacecraft, robotics, electronics, firmware and test systems—from first sketch to qualified hardware.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#work">Explore selected work</a>
+                    <a class="button button-secondary" href="assets/documents/Nick-Graham-CV-May-2026.pdf" target="_blank" rel="noopener" aria-label="View Nick Graham's CV as a PDF in a new tab">View CV <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="https://www.linkedin.com/in/nick-graham-space/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="hero-readout reveal" aria-label="Career highlights">
+                <div class="readout-label">MISSION PROFILE / 2026</div>
+                <dl>
+                    <div><dt>Industry</dt><dd>Space since 2016</dd></div>
+                    <div><dt>Discipline</dt><dd>Mechanical + systems</dd></div>
+                    <div><dt>Registration</dt><dd>CEng / IMechE</dd></div>
+                    <div><dt>Focus</dt><dd>Build · test · fly</dd></div>
+                </dl>
+                <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <a class="scroll-cue" href="#work"><span>Scroll to work</span><span aria-hidden="true">↓</span></a>
+        </section>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+        <section class="section work-section" id="work">
+            <div class="section-heading reveal">
+                <p class="section-index">01 / Selected work</p>
+                <h2>Engineering across the mission lifecycle.</h2>
+                <p>Multidisciplinary work spanning spacecraft mechanisms, representative test hardware, embedded control and qualification.</p>
+            </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+            <div class="project-grid">
+                <article class="project-card project-card-large reveal">
+                    <div class="project-topline"><span>Astroscale</span><span>2022—Present</span></div>
+                    <div class="project-number">01</div>
+                    <h3>UK Active Debris Removal</h3>
+                    <p class="project-kicker">COSMIC spacecraft · UK ADR</p>
+                    <p>Lead mechanical design contribution to COSMIC, Astroscale’s spacecraft solution for the UK’s national Active Debris Removal mission, developing rendezvous and proximity operations hardware and robotic-arm technology.</p>
+                    <figure class="project-media">
+                        <video controls muted loop playsinline preload="metadata" poster="assets/videos/cosmic-concept-model-poster.jpg" aria-label="Video of the 3D-printed COSMIC spacecraft concept model">
+                            <source src="assets/videos/cosmic-concept-model-web.mp4" type="video/mp4">
+                            Your browser does not support embedded video.
+                        </video>
+                        <figcaption>
+                            <strong>3D-printed concept model</strong>
+                            <span>I designed and built this model of the COSMIC spacecraft for use by the marketing team.</span>
+                        </figcaption>
+                    </figure>
+                    <ul class="tag-list" aria-label="UKADR disciplines">
+                        <li>Spacecraft design</li><li>RPO</li><li>Robotics</li><li>Analysis</li>
+                    </ul>
+                </article>
 
-</div>
+                <article class="project-card reveal">
+                    <div class="project-topline"><span>Astroscale</span><span>Prototyping</span></div>
+                    <div class="project-number">02</div>
+                    <h3>Trade-show and GNC testbed models</h3>
+                    <p>Designed and built 3D-printed and scaled servicer and client-spacecraft models for trade-show demonstrations and GNC and computer-vision simulations. In the testbeds, the client models are manipulated using three-axis motorised gimbals that I designed, built and integrated; I also developed the embedded firmware and operator UI used to control them.</p>
+                    <figure class="project-evidence">
+                        <a href="https://www.linkedin.com/posts/astroscale_we-were-proud-to-join-partners-from-across-activity-7482736028936654848-1mq9" target="_blank" rel="noopener noreferrer" aria-label="View Astroscale's LinkedIn post about the opening of the UK Space and Defence Gateway">
+                            <img src="assets/portfolio/astroscale-king-gateway-models.png" alt="King Charles III viewing an Astroscale servicer and client spacecraft model during a mission demonstration" loading="lazy">
+                        </a>
+                        <figcaption>
+                            <strong>Models that communicate the mission</strong>
+                            <span>King Charles III speaks with Astroscale about its missions at the official opening of the UK Space and Defence Gateway at Harwell. Image: Astroscale.</span>
+                        </figcaption>
+                    </figure>
+                    <ul class="tag-list" aria-label="Gimbal disciplines">
+                        <li>GNC simulation</li><li>Computer vision</li><li>Mechanisms</li><li>Firmware</li><li>UI</li><li>3D printing</li>
+                    </ul>
+                </article>
+
+                <article class="project-card project-card-mission reveal">
+                    <div class="project-topline"><span>Astroscale</span><span>ELSA-M</span></div>
+                    <div class="project-number">03</div>
+                    <div class="mission-card-heading">
+                        <h3>ELSA‑M</h3>
+                        <p class="project-kicker">Commercial end-of-life servicing</p>
+                    </div>
+                    <div class="mission-card-body">
+                        <p>Senior Mechanical Designer for ELSA‑M, developing the spacecraft structural design through Critical Design Review and supporting qualification testing. The 520 kg servicer is now preparing for launch to demonstrate removal of a prepared Eutelsat OneWeb satellite.</p>
+                        <ul class="tag-list" aria-label="ELSA-M disciplines">
+                            <li>Structural design</li><li>CDR</li><li>Qualification</li><li>Flight hardware</li>
+                        </ul>
+                        <a class="project-source-link" href="https://www.astroscale.com/en/missions/elsa-m" target="_blank" rel="noopener noreferrer">View the ELSA‑M mission profile <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-robotics reveal">
+                    <div class="project-topline"><span>TISICS + Astroscale</span><span>Robotic manipulation</span></div>
+                    <div class="project-number">04</div>
+                    <figure class="robotics-project-image">
+                        <img src="assets/portfolio/robotic-arm-capture-testing.png" alt="A multi-jointed robotic arm demonstrating spacecraft capture between two representative satellite structures" loading="lazy">
+                        <figcaption>Robotic capture testing in a representative spacecraft environment</figcaption>
+                    </figure>
+                    <div class="robotics-project-copy">
+                        <p class="project-kicker">Airbus · LARAD · RISMA · VISPA</p>
+                        <h3>Lightweight robotic arms and capture mechanics</h3>
+                        <p>At TISICS, I supported Airbus’s LARAD and RISMA robotic-arm programmes, designing and procuring lightweight metal-matrix-composite components for the manipulators.</p>
+                        <p>Later, at Astroscale, I contributed to VISPA by developing the LAR capture mechanics at the Satellite Applications Catapult’s In-Orbit Servicing and Manufacturing facility.</p>
+                        <ul class="tag-list" aria-label="Robotic-arm project disciplines">
+                            <li>Robotic arms</li><li>MMC structures</li><li>Capture mechanisms</li><li>IOSM</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-accent project-card-odin reveal">
+                    <div class="project-topline"><span>ODIN Space</span><span>Independent work</span></div>
+                    <div class="project-number">05</div>
+                    <div class="odin-project-copy">
+                        <h3>Flight systems, end to end</h3>
+                        <p>Supporting flight-software development alongside electronics engineering, mechanical design and purpose-built testbeds. Taking hardware through environmental qualification including vibration, TVAC and EMI testing.</p>
+                        <ul class="tag-list" aria-label="ODIN disciplines">
+                            <li>Flight software</li><li>Electronics</li><li>Testbeds</li><li>Qualification</li>
+                        </ul>
+                        <a class="odin-project-link" href="https://www.odin.space/" target="_blank" rel="noopener noreferrer">Explore ODIN Space <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <a class="odin-project-media" href="https://www.odin.space/" target="_blank" rel="noopener noreferrer" aria-label="Visit the ODIN Space website">
+                        <img src="assets/portfolio/odin-debris-sensor.png" alt="ODIN Space debris sensor hardware" loading="lazy">
+                        <span>ODIN Space debris sensor · Image: ODIN Space</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="mission-feature" aria-labelledby="wrapped-rib-title">
+            <div class="mission-image reveal">
+                <img src="assets/portfolio/carbsar-flight-ready.jpg" alt="Wrapped-Rib antenna in its stowed configuration integrated with SSTL's CarbSAR spacecraft" loading="lazy">
+                <span class="image-credit">Image: Oxford Space Systems / SSTL</span>
+            </div>
+            <div class="mission-copy reveal">
+                <p class="section-index">Flight heritage / January 2026</p>
+                <h2 id="wrapped-rib-title">Wrapped‑Rib: designed on Earth, proven in orbit.</h2>
+                <p>At Oxford Space Systems I was Mechanical Design Lead and a work-package technical lead within the team developing the Wrapped‑Rib deployable antenna.</p>
+                <p>Integrated with SSTL’s CarbSAR spacecraft, it launched on a SpaceX Falcon 9 on 11 January 2026, deployed successfully in orbit and is now operating—turning years of design, analysis, manufacture and ground testing into flight heritage.</p>
+                <div class="mission-facts">
+                    <div><strong>LEO</strong><span>Operating environment</span></div>
+                    <div><strong>X-band</strong><span>SAR application</span></div>
+                    <div><strong>Flight proven</strong><span>In-orbit deployment</span></div>
+                </div>
+                <div class="mission-links">
+                    <a class="button button-primary" href="https://www.linkedin.com/posts/oxford-space-systems_wrappedribantenna-sar-earthobservation-activity-7422595246930182145-U7tD" target="_blank" rel="noopener noreferrer">Watch the deployment <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="https://oxford.space/post/?permalink=oxford-space-systems-and-sstl-announce-successful-in-orbit-deployment-of-wrapped-rib-antenna-on-carbsar-mission" target="_blank" rel="noopener noreferrer">Read the mission announcement <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section experience-section" id="experience">
+            <div class="section-heading reveal">
+                <p class="section-index">02 / Experience</p>
+                <h2>From advanced materials to on-orbit servicing.</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <time>2022—Now</time>
+                    <div><p class="timeline-company"><a href="https://www.astroscale.com/" target="_blank" rel="noopener noreferrer">Astroscale <span aria-hidden="true">↗</span></a> · Didcot</p><h3>Senior Mechanical Design Engineer</h3><p>Mechanical design for active debris removal and in-orbit servicing, plus representative test assets and mechatronic sensor-test systems.</p></div>
+                </article>
+                <article class="timeline-item reveal">
+                    <time>2021—2025</time>
+                    <div>
+                        <p class="timeline-company">Oxford Dynamics · Didcot</p>
+                        <h3>Robotics Lead / Mechanical Design Engineer</h3>
+                        <p>Led mechanical development of AI-enabled robotic platforms, including STRIDER for operation in hazardous biological, chemical, nuclear and radiation-exposed environments.</p>
+                        <a class="timeline-feature" href="https://www.bbc.co.uk/news/articles/cg647kqk34ro" target="_blank" rel="noopener noreferrer" aria-label="Read BBC News coverage of Oxford Dynamics' STRIDER robot">
+                            <img src="assets/portfolio/strider-bbc.jpg" alt="Close-up of STRIDER's robotic sampling arm and sensor head" loading="lazy">
+                            <span class="timeline-feature-copy">
+                                <small>BBC News coverage</small>
+                                <strong>Oxford Dynamics AI robot to venture into hazardous areas</strong>
+                                <span>Read the article <span aria-hidden="true">↗</span></span>
+                            </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <time>2019—2022</time>
+                    <div><p class="timeline-company"><a href="https://oxford.space/" target="_blank" rel="noopener noreferrer">Oxford Space Systems <span aria-hidden="true">↗</span></a> · Didcot</p><h3>Senior Mechanical &amp; Thermal Engineer</h3><p>Mechanical Design Lead for the Wrapped‑Rib antenna; technical leadership across deployable structures, analysis, qualification planning and customer reviews.</p></div>
+                </article>
+                <article class="timeline-item reveal">
+                    <time>2016—2019</time>
+                    <div>
+                        <p class="timeline-company">TISICS · Farnborough</p>
+                        <h3>Mechanical Design &amp; FE Engineer</h3>
+                        <p>Designed and built this dual-fuel satellite tank assembly to demonstrate diffusion-bonded manufacture, replacing weaker welded seams with fully integral joints. The wider role covered full-lifecycle R&amp;D in lightweight metal-matrix composites, CAD, FEA, thermal analysis and CNC manufacture.</p>
+                        <a class="timeline-feature" href="https://www.tisics.co.uk/space-overview" target="_blank" rel="noopener noreferrer" aria-label="Explore TISICS space technologies and dual-fuel tank solutions">
+                            <img src="assets/portfolio/tisics-dual-fuel-tank.jpg" alt="Dual-fuel satellite tank assembly designed and built to demonstrate diffusion-bonded construction" loading="lazy">
+                            <span class="timeline-feature-copy">
+                                <small>Dual-fuel satellite tank</small>
+                                <strong>Diffusion-bonded construction replaces weaker welded seams with integral joints</strong>
+                                <span>Explore TISICS space technology <span aria-hidden="true">↗</span></span>
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section capabilities-section" id="capabilities">
+            <div class="section-heading reveal">
+                <p class="section-index">03 / Capabilities</p>
+                <h2>Useful at the interfaces.</h2>
+                <p>I work where mechanical, electrical and software decisions meet—keeping the whole test or flight system in view.</p>
+            </div>
+            <div class="capability-grid">
+                <article class="capability reveal"><span>01</span><h3>Mechanical systems</h3><p>CAD, mechanisms, drawing to BS 8888, design for manufacture, structural and thermal analysis.</p></article>
+                <article class="capability reveal"><span>02</span><h3>Embedded &amp; electronics</h3><p>Firmware, sensor integration, motor control, PCB-level development and operator interfaces.</p></article>
+                <article class="capability reveal"><span>03</span><h3>Test &amp; qualification</h3><p>Representative testbeds, procedures, vibration, thermal vacuum, EMI and subsystem validation.</p></article>
+                <article class="capability reveal"><span>04</span><h3>Technical leadership</h3><p>Work-package ownership, multidisciplinary reviews, stakeholder trade-offs, mentoring and delivery.</p></article>
+            </div>
+            <div class="publication-note reveal">
+                <span>Published research</span>
+                <p>Co-author, <cite>Self-healing of structural carbon fibres in polymer composites</cite>, Cogent Engineering 7.1 (2020).</p>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-copy reveal">
+                <p class="section-index">04 / Contact</p>
+                <h2>Let’s build something<br>that has to work.</h2>
+                <p>For spacecraft, robotics, test-system and multidisciplinary engineering conversations, connect with me on LinkedIn.</p>
+                <a class="button button-light" href="https://www.linkedin.com/in/nick-graham-space/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+            <aside class="contact-organisations reveal" aria-labelledby="organisations-title">
+                <p id="organisations-title">Organisations I’ve worked with</p>
+                <ul class="logo-collage">
+                    <li><img src="assets/logos/astroscale.png" alt="Astroscale" loading="lazy"></li>
+                    <li><img src="assets/logos/odin-space-current.svg" alt="ODIN Space" loading="lazy"></li>
+                    <li><img src="assets/logos/spacetime-development.svg" alt="Spacetime Development" loading="lazy"></li>
+                    <li><img src="assets/logos/space-store.png" alt="Space Store" loading="lazy"></li>
+                    <li><img src="assets/logos/oxlabs.png" alt="OxLABS" loading="lazy"></li>
+                    <li><img src="assets/logos/oxford-dynamics.png" alt="Oxford Dynamics" loading="lazy"></li>
+                    <li><img src="assets/logos/oxford-space-systems.png" alt="Oxford Space Systems" loading="lazy"></li>
+                    <li><img src="assets/logos/tisics.png" alt="TISICS" loading="lazy"></li>
+                    <li><img src="assets/logos/ral-space.png" alt="RAL Space" loading="lazy"></li>
+                    <li><img src="assets/logos/satellite-applications-catapult.png" alt="Satellite Applications Catapult" loading="lazy"></li>
+                    <li><img src="assets/logos/airbus.png" alt="Airbus" loading="lazy"></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span data-year>2026</span> Nick Graham, CEng</p>
+        <p>Mechanical · Electrical · Software · Test</p>
+        <a href="#top">Back to top ↑</a>
+    </footer>
+</body>
+</html>
