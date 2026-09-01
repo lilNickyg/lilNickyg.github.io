@@ -32,108 +32,199 @@
             <span class="visually-hidden">Open navigation</span>
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
-            <a href="#work">Work</a>
+            <a href="#work">Selected work</a>
             <a href="#experience">Experience</a>
             <a href="#capabilities">Capabilities</a>
             <a href="#contact">Contact</a>
+            <a href="assets/documents/Nick-Graham-CV-May-2026.pdf" target="_blank" rel="noopener" aria-label="View Nick Graham's CV as a PDF in a new tab">CV <span aria-hidden="true">↗</span></a>
         </nav>
     </header>
 
     <main id="main">
-        <section class="hero" id="top">
-            <div class="hero-grid" aria-hidden="true"></div>
-            <div class="hero-orbit orbit-one" aria-hidden="true"></div>
-            <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <section class="hero" id="top" aria-labelledby="wrapped-rib-title">
             <div class="hero-copy reveal">
-                <p class="eyebrow"><span class="status-dot"></span> Space systems engineer · Greater Oxford</p>
-                <h1>Building the hardware<br>that makes <em>missions move.</em></h1>
-                <p class="hero-lede">I’m Nick Graham, a Chartered Mechanical Engineer working across spacecraft, robotics, electronics, firmware and test systems—from first sketch to qualified hardware.</p>
+                <p class="eyebrow">Oxford Space Systems / January 2026</p>
+                <h1 id="wrapped-rib-title">Wrapped‑Rib:<br><em>designed on Earth,</em><br>proven in orbit.</h1>
+                <p class="hero-lede">Mechanical Design Lead for the deployable X-band antenna now operating aboard SSTL’s CarbSAR spacecraft.</p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#work">Explore selected work</a>
-                    <a class="button button-secondary" href="assets/documents/Nick-Graham-CV-May-2026.pdf" target="_blank" rel="noopener" aria-label="View Nick Graham's CV as a PDF in a new tab">View CV <span aria-hidden="true">↗</span></a>
-                    <a class="button button-secondary" href="https://www.linkedin.com/in/nick-graham-space/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a class="button button-primary" href="https://www.linkedin.com/posts/oxford-space-systems_wrappedribantenna-sar-earthobservation-activity-7422595246930182145-U7tD" target="_blank" rel="noopener noreferrer">Watch the deployment <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="https://oxford.space/post/?permalink=oxford-space-systems-and-sstl-announce-successful-in-orbit-deployment-of-wrapped-rib-antenna-on-carbsar-mission" target="_blank" rel="noopener noreferrer">Mission announcement <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-            <div class="hero-readout reveal" aria-label="Career highlights">
-                <div class="readout-label">MISSION PROFILE / 2026</div>
+
+            <div class="hero-gallery reveal" data-hero-gallery>
+                <div class="hero-slides">
+                    <figure class="hero-slide" id="wrapped-rib-ground" role="tabpanel" aria-labelledby="wrapped-rib-ground-tab" aria-hidden="true" tabindex="-1" data-gallery-slide>
+                        <img src="assets/portfolio/carbsar-integration.jpg" alt="Wrapped-Rib antenna deployed during ground integration at Oxford Space Systems">
+                        <figcaption>Ground integration · Image: Oxford Space Systems</figcaption>
+                    </figure>
+                    <figure class="hero-slide" id="wrapped-rib-flight" role="tabpanel" aria-labelledby="wrapped-rib-flight-tab" aria-hidden="true" tabindex="-1" data-gallery-slide>
+                        <img src="assets/portfolio/carbsar-flight-ready.jpg" alt="Wrapped-Rib antenna in its stowed flight configuration integrated with SSTL's CarbSAR spacecraft">
+                        <figcaption>Flight configuration · Image: Oxford Space Systems / SSTL</figcaption>
+                    </figure>
+                    <figure class="hero-slide active" id="wrapped-rib-orbit" role="tabpanel" aria-labelledby="wrapped-rib-orbit-tab" aria-hidden="false" tabindex="0" data-gallery-slide>
+                        <img src="assets/portfolio/wrapped-rib-deployed.jpg" alt="Wrapped-Rib antenna deployed above Earth in orbit aboard the CarbSAR spacecraft">
+                        <figcaption>Deployed in orbit · Image: SSTL</figcaption>
+                    </figure>
+                </div>
+                <div class="hero-gallery-controls" role="tablist" aria-label="Wrapped-Rib mission stages">
+                    <button type="button" id="wrapped-rib-ground-tab" role="tab" aria-controls="wrapped-rib-ground" aria-selected="false" tabindex="-1" data-gallery-button>
+                        <span>01</span><strong>Ground integration</strong>
+                    </button>
+                    <button type="button" id="wrapped-rib-flight-tab" role="tab" aria-controls="wrapped-rib-flight" aria-selected="false" tabindex="-1" data-gallery-button>
+                        <span>02</span><strong>Flight ready</strong>
+                    </button>
+                    <button class="active" type="button" id="wrapped-rib-orbit-tab" role="tab" aria-controls="wrapped-rib-orbit" aria-selected="true" tabindex="0" data-gallery-button>
+                        <span>03</span><strong>Deployed in orbit</strong>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-profile reveal" aria-label="Engineering profile">
+                <p>Mission profile</p>
                 <dl>
                     <div><dt>Industry</dt><dd>Space since 2016</dd></div>
                     <div><dt>Discipline</dt><dd>Mechanical + systems</dd></div>
                     <div><dt>Registration</dt><dd>CEng / IMechE</dd></div>
-                    <div><dt>Focus</dt><dd>Build · test · fly</dd></div>
+                    <div><dt>Location</dt><dd>Greater Oxford</dd></div>
                 </dl>
-                <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <a href="#work" aria-label="Continue to selected work">Selected work <span aria-hidden="true">↓</span></a>
             </div>
-            <a class="scroll-cue" href="#work"><span>Scroll to work</span><span aria-hidden="true">↓</span></a>
         </section>
 
         <section class="section work-section" id="work">
             <div class="section-heading reveal">
-                <p class="section-index">01 / Selected work</p>
-                <h2>Engineering across the mission lifecycle.</h2>
-                <p>Multidisciplinary work spanning spacecraft mechanisms, representative test hardware, embedded control and qualification.</p>
+                <h2 class="section-index">01 / Selected work</h2>
+                <p class="section-meta">Flight + ground systems</p>
+                <p class="section-summary">Spacecraft mechanisms, robotics, embedded control and representative test hardware.</p>
             </div>
 
             <div class="project-grid">
                 <article class="project-card project-card-large reveal">
                     <div class="project-topline"><span>Astroscale</span><span>2022—Present</span></div>
                     <div class="project-number">01</div>
-                    <h3>UK Active Debris Removal</h3>
-                    <p class="project-kicker">COSMIC spacecraft · UK ADR</p>
-                    <p>Lead mechanical design contribution to COSMIC, Astroscale’s spacecraft solution for the UK’s national Active Debris Removal mission, developing rendezvous and proximity operations hardware and robotic-arm technology.</p>
-                    <figure class="project-media">
-                        <video controls muted loop playsinline preload="metadata" poster="assets/videos/cosmic-concept-model-poster.jpg" aria-label="Video of the 3D-printed COSMIC spacecraft concept model">
-                            <source src="assets/videos/cosmic-concept-model-web.mp4" type="video/mp4">
-                            Your browser does not support embedded video.
-                        </video>
-                        <figcaption>
-                            <strong>3D-printed concept model</strong>
-                            <span>I designed and built this model of the COSMIC spacecraft for use by the marketing team.</span>
-                        </figcaption>
+                    <div class="cosmic-project-copy">
+                        <h3>COSMIC Mission</h3>
+                        <p class="project-kicker">Active Debris Removal</p>
+                        <p>Lead mechanical designer for the COSMIC mission, Astroscale’s spacecraft solution for the UK’s national Active Debris Removal mission, developing rendezvous and proximity operations hardware and robotic-arm technology.</p>
+                        <ul class="tag-list" aria-label="COSMIC mission disciplines">
+                            <li>Spacecraft design</li><li>RPO</li><li>Robotics</li><li>Analysis</li>
+                        </ul>
+                    </div>
+
+                    <figure class="cosmic-project-media">
+                        <img src="assets/portfolio/CG Image of COSMIC Arm Extended Earth Background.png" alt="CG image of the COSMIC debris-removal spacecraft above Earth with its robotic arm extended">
+                        <figcaption>CG image of COSMIC with robotic arm extended · Image: Astroscale</figcaption>
                     </figure>
-                    <ul class="tag-list" aria-label="UKADR disciplines">
-                        <li>Spacecraft design</li><li>RPO</li><li>Robotics</li><li>Analysis</li>
-                    </ul>
+
+                    <section class="cosmic-timeline" aria-labelledby="cosmic-timeline-title" data-project-timeline>
+                        <div class="cosmic-timeline-header">
+                            <div>
+                                <p>Mission development / Pre-launch</p>
+                                <h4 id="cosmic-timeline-title">COSMIC timeline</h4>
+                            </div>
+                            <div class="cosmic-timeline-actions">
+                                <a href="https://www.astroscale.com/en/missions/cosmic" target="_blank" rel="noopener noreferrer">Official mission profile <span aria-hidden="true">↗</span></a>
+                                <button type="button" aria-label="Previous COSMIC timeline events" data-timeline-previous disabled><span aria-hidden="true">←</span></button>
+                                <button type="button" aria-label="Next COSMIC timeline events" data-timeline-next><span aria-hidden="true">→</span></button>
+                            </div>
+                        </div>
+
+                        <div class="cosmic-timeline-viewport" tabindex="0" aria-label="Scrollable COSMIC mission timeline" data-timeline-viewport>
+                            <div class="cosmic-timeline-track">
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2021-10-26">26 Oct 2021</time>
+                                    <h5>Phase 0–A Feasibility Study Kick-Off</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2022-09-26">26 Sep 2022</time>
+                                    <h5>Phase B Kick-Off</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2023-10-10">10 Oct 2023</time>
+                                    <h5>Phase B System Requirements Review</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2024-04-22">22 Apr 2024</time>
+                                    <h5>Phase B Preliminary Design Review</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2024-09-11">11 Sep 2024</time>
+                                    <h5>Phase 2 Kick-Off</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2025-02">Feb 2025</time>
+                                    <h5>Phase 2 Mid-Term Review</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2025-05">May 2025</time>
+                                    <h5>Phase 2 Complete</h5>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
                 </article>
 
-                <article class="project-card reveal">
-                    <div class="project-topline"><span>Astroscale</span><span>Prototyping</span></div>
-                    <div class="project-number">02</div>
-                    <h3>Trade-show and GNC testbed models</h3>
-                    <p>Designed and built 3D-printed and scaled servicer and client-spacecraft models for trade-show demonstrations and GNC and computer-vision simulations. In the testbeds, the client models are manipulated using three-axis motorised gimbals that I designed, built and integrated; I also developed the embedded firmware and operator UI used to control them.</p>
-                    <figure class="project-evidence">
-                        <a href="https://www.linkedin.com/posts/astroscale_we-were-proud-to-join-partners-from-across-activity-7482736028936654848-1mq9" target="_blank" rel="noopener noreferrer" aria-label="View Astroscale's LinkedIn post about the opening of the UK Space and Defence Gateway">
-                            <img src="assets/portfolio/astroscale-king-gateway-models.png" alt="King Charles III viewing an Astroscale servicer and client spacecraft model during a mission demonstration" loading="lazy">
-                        </a>
-                        <figcaption>
-                            <strong>Models that communicate the mission</strong>
-                            <span>King Charles III speaks with Astroscale about its missions at the official opening of the UK Space and Defence Gateway at Harwell. Image: Astroscale.</span>
-                        </figcaption>
-                    </figure>
-                    <ul class="tag-list" aria-label="Gimbal disciplines">
-                        <li>GNC simulation</li><li>Computer vision</li><li>Mechanisms</li><li>Firmware</li><li>UI</li><li>3D printing</li>
-                    </ul>
-                </article>
-
-                <article class="project-card project-card-mission reveal">
+                <article class="project-card project-card-large project-card-elsa reveal">
                     <div class="project-topline"><span>Astroscale</span><span>ELSA-M</span></div>
-                    <div class="project-number">03</div>
-                    <div class="mission-card-heading">
+                    <div class="project-number">02</div>
+                    <div class="cosmic-project-copy">
                         <h3>ELSA‑M</h3>
                         <p class="project-kicker">Commercial end-of-life servicing</p>
-                    </div>
-                    <div class="mission-card-body">
                         <p>Senior Mechanical Designer for ELSA‑M, developing the spacecraft structural design through Critical Design Review and supporting qualification testing. The 520 kg servicer is now preparing for launch to demonstrate removal of a prepared Eutelsat OneWeb satellite.</p>
                         <ul class="tag-list" aria-label="ELSA-M disciplines">
                             <li>Structural design</li><li>CDR</li><li>Qualification</li><li>Flight hardware</li>
                         </ul>
-                        <a class="project-source-link" href="https://www.astroscale.com/en/missions/elsa-m" target="_blank" rel="noopener noreferrer">View the ELSA‑M mission profile <span aria-hidden="true">↗</span></a>
                     </div>
+
+                    <figure class="cosmic-project-media">
+                        <img src="assets/portfolio/CG Image of ELSA-M Docking with Debris.png" alt="CG image of the ELSA-M servicer magnetically docked with a client satellite in orbit" loading="lazy">
+                        <figcaption>CG image of ELSA‑M docking with debris · Image: Astroscale</figcaption>
+                    </figure>
+
+                    <section class="cosmic-timeline" aria-labelledby="elsa-timeline-title" data-project-timeline>
+                        <div class="cosmic-timeline-header">
+                            <div>
+                                <p>Mission development / Pre-launch</p>
+                                <h4 id="elsa-timeline-title">ELSA‑M timeline</h4>
+                            </div>
+                            <div class="cosmic-timeline-actions">
+                                <a href="https://www.astroscale.com/en/missions/elsa-m" target="_blank" rel="noopener noreferrer">Official mission profile <span aria-hidden="true">↗</span></a>
+                                <button type="button" aria-label="Previous ELSA-M timeline events" data-timeline-previous disabled><span aria-hidden="true">←</span></button>
+                                <button type="button" aria-label="Next ELSA-M timeline events" data-timeline-next><span aria-hidden="true">→</span></button>
+                            </div>
+                        </div>
+
+                        <div class="cosmic-timeline-viewport" tabindex="0" aria-label="Scrollable ELSA-M mission timeline" data-timeline-viewport>
+                            <div class="cosmic-timeline-track">
+                                <article class="cosmic-timeline-item">
+                                    <span class="cosmic-timeline-date">Pre-launch</span>
+                                    <h5>Phase 1 Kick-Off</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <span class="cosmic-timeline-date">Pre-launch</span>
+                                    <h5>Phase 3 Kick-Off</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2024-06">Jun 2024</time>
+                                    <h5>Phase 4 Kick-Off — flight model AIT</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2025-06">Jun 2025</time>
+                                    <h5>CDR complete</h5>
+                                </article>
+                                <article class="cosmic-timeline-item">
+                                    <time datetime="2026-03-16">16 Mar 2026</time>
+                                    <h5>ISAR Aerospace selected for launch</h5>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
                 </article>
 
                 <article class="project-card project-card-robotics reveal">
                     <div class="project-topline"><span>TISICS + Astroscale</span><span>Robotic manipulation</span></div>
-                    <div class="project-number">04</div>
+                    <div class="project-number">03</div>
                     <figure class="robotics-project-image">
                         <img src="assets/portfolio/robotic-arm-capture-testing.png" alt="A multi-jointed robotic arm demonstrating spacecraft capture between two representative satellite structures" loading="lazy">
                         <figcaption>Robotic capture testing in a representative spacecraft environment</figcaption>
@@ -151,49 +242,120 @@
 
                 <article class="project-card project-card-accent project-card-odin reveal">
                     <div class="project-topline"><span>ODIN Space</span><span>Independent work</span></div>
-                    <div class="project-number">05</div>
+                    <div class="project-number">04</div>
                     <div class="odin-project-copy">
-                        <h3>Flight systems, end to end</h3>
+                        <h3>The Odin Black Box</h3>
                         <p>Supporting flight-software development alongside electronics engineering, mechanical design and purpose-built testbeds. Taking hardware through environmental qualification including vibration, TVAC and EMI testing.</p>
                         <ul class="tag-list" aria-label="ODIN disciplines">
                             <li>Flight software</li><li>Electronics</li><li>Testbeds</li><li>Qualification</li>
                         </ul>
-                        <a class="odin-project-link" href="https://www.odin.space/" target="_blank" rel="noopener noreferrer">Explore ODIN Space <span aria-hidden="true">↗</span></a>
+                        <a class="odin-project-link" href="https://www.odin.space/technology" target="_blank" rel="noopener noreferrer">Explore ODIN technology <span aria-hidden="true">↗</span></a>
                     </div>
-                    <a class="odin-project-media" href="https://www.odin.space/" target="_blank" rel="noopener noreferrer" aria-label="Visit the ODIN Space website">
-                        <img src="assets/portfolio/odin-debris-sensor.png" alt="ODIN Space debris sensor hardware" loading="lazy">
-                        <span>ODIN Space debris sensor · Image: ODIN Space</span>
-                    </a>
-                </article>
-            </div>
-        </section>
+                    <div class="odin-interactive" data-odin-interactive aria-label="Interactive view of the ODIN Black Box and Nano Sensor">
+                        <div class="odin-device-stage">
+                            <img src="assets/portfolio/ODIN_NanoHub.png" alt="ODIN Black Box connected by cables to a flexible Nano Sensor strip" loading="lazy">
 
-        <section class="mission-feature" aria-labelledby="wrapped-rib-title">
-            <div class="mission-image reveal">
-                <img src="assets/portfolio/carbsar-flight-ready.jpg" alt="Wrapped-Rib antenna in its stowed configuration integrated with SSTL's CarbSAR spacecraft" loading="lazy">
-                <span class="image-credit">Image: Oxford Space Systems / SSTL</span>
-            </div>
-            <div class="mission-copy reveal">
-                <p class="section-index">Flight heritage / January 2026</p>
-                <h2 id="wrapped-rib-title">Wrapped‑Rib: designed on Earth, proven in orbit.</h2>
-                <p>At Oxford Space Systems I was Mechanical Design Lead and a work-package technical lead within the team developing the Wrapped‑Rib deployable antenna.</p>
-                <p>Integrated with SSTL’s CarbSAR spacecraft, it launched on a SpaceX Falcon 9 on 11 January 2026, deployed successfully in orbit and is now operating—turning years of design, analysis, manufacture and ground testing into flight heritage.</p>
-                <div class="mission-facts">
-                    <div><strong>LEO</strong><span>Operating environment</span></div>
-                    <div><strong>X-band</strong><span>SAR application</span></div>
-                    <div><strong>Flight proven</strong><span>In-orbit deployment</span></div>
-                </div>
-                <div class="mission-links">
-                    <a class="button button-primary" href="https://www.linkedin.com/posts/oxford-space-systems_wrappedribantenna-sar-earthobservation-activity-7422595246930182145-U7tD" target="_blank" rel="noopener noreferrer">Watch the deployment <span aria-hidden="true">↗</span></a>
-                    <a class="text-link" href="https://oxford.space/post/?permalink=oxford-space-systems-and-sstl-announce-successful-in-orbit-deployment-of-wrapped-rib-antenna-on-carbsar-mission" target="_blank" rel="noopener noreferrer">Read the mission announcement <span aria-hidden="true">↗</span></a>
-                </div>
+                            <button class="odin-hotspot odin-hotspot-left" style="--hotspot-x: 8%; --hotspot-y: 31%;" type="button" aria-expanded="false" aria-label="Show details: Acoustic Sensor" aria-describedby="odin-detail-acoustic" data-odin-hotspot>
+                                <span class="odin-hotspot-dot" aria-hidden="true"></span>
+                                <span class="odin-hotspot-panel" id="odin-detail-acoustic">
+                                    <small>01 / Sensor</small>
+                                    <strong>Acoustic Sensor</strong>
+                                    <span>Instantly pinpoint the exact timing and location of collisions, with precise data on the scale of damage.</span>
+                                </span>
+                            </button>
+
+                            <button class="odin-hotspot odin-hotspot-left" style="--hotspot-x: 8%; --hotspot-y: 39%;" type="button" aria-expanded="false" aria-label="Show details: Peel-and-Stick Integration" aria-describedby="odin-detail-integration" data-odin-hotspot>
+                                <span class="odin-hotspot-dot" aria-hidden="true"></span>
+                                <span class="odin-hotspot-panel" id="odin-detail-integration">
+                                    <small>02 / Integration</small>
+                                    <strong>Peel-and-Stick Integration</strong>
+                                    <span>Installation is intuitive with ODIN’s flexible peel-and-stick technology.</span>
+                                </span>
+                            </button>
+
+                            <button class="odin-hotspot" style="--hotspot-x: 31%; --hotspot-y: 70%;" type="button" aria-expanded="false" aria-label="Show details: Ultra-Low SWaP" aria-describedby="odin-detail-swap" data-odin-hotspot>
+                                <span class="odin-hotspot-dot" aria-hidden="true"></span>
+                                <span class="odin-hotspot-panel" id="odin-detail-swap">
+                                    <small>03 / Specification</small>
+                                    <strong>Ultra-Low SWaP</strong>
+                                    <span>Size: 80 mm × 12.6 mm × 4 mm<br>Weight: 4 g<br>Power: 1.2 W</span>
+                                </span>
+                            </button>
+
+                            <button class="odin-hotspot" style="--hotspot-x: 33%; --hotspot-y: 60%;" type="button" aria-expanded="false" aria-label="Show details: Flexible Materials" aria-describedby="odin-detail-materials" data-odin-hotspot>
+                                <span class="odin-hotspot-dot" aria-hidden="true"></span>
+                                <span class="odin-hotspot-panel" id="odin-detail-materials">
+                                    <small>04 / Mounting</small>
+                                    <strong>Flexible Materials</strong>
+                                    <span>Mount seamlessly on any spacecraft.</span>
+                                </span>
+                            </button>
+
+                            <button class="odin-hotspot odin-hotspot-below odin-hotspot-right" style="--hotspot-x: 69%; --hotspot-y: 0%;" type="button" aria-expanded="false" aria-label="Show details: M3 Bolt Holes" aria-describedby="odin-detail-bolts" data-odin-hotspot>
+                                <span class="odin-hotspot-dot" aria-hidden="true"></span>
+                                <span class="odin-hotspot-panel" id="odin-detail-bolts">
+                                    <small>05 / Mounting</small>
+                                    <strong>M3 Bolt Holes</strong>
+                                    <span>Standardised M3 bolt holes for effortless mounting within the spacecraft bus.</span>
+                                </span>
+                            </button>
+
+                            <button class="odin-hotspot odin-hotspot-left" style="--hotspot-x: 17.5%; --hotspot-y: 47.5%;" type="button" aria-expanded="false" aria-label="Show details: Verification Sensor" aria-describedby="odin-detail-verification" data-odin-hotspot>
+                                <span class="odin-hotspot-dot" aria-hidden="true"></span>
+                                <span class="odin-hotspot-panel" id="odin-detail-verification">
+                                    <small>06 / Sensor</small>
+                                    <strong>Verification Sensor</strong>
+                                    <span>Additional sensor essential for diagnostics and insurance claims.</span>
+                                </span>
+                            </button>
+
+                            <button class="odin-hotspot" style="--hotspot-x: 25%; --hotspot-y: 32%;" type="button" aria-expanded="false" aria-label="Show details: Nano-D Connector" aria-describedby="odin-detail-nano-d" data-odin-hotspot>
+                                <span class="odin-hotspot-dot" aria-hidden="true"></span>
+                                <span class="odin-hotspot-panel" id="odin-detail-nano-d">
+                                    <small>07 / Interface</small>
+                                    <strong>Nano-D Connector</strong>
+                                    <span>Industry standard Nano-D connectors for reliable data transmission to Nano Hub™.</span>
+                                </span>
+                            </button>
+
+                            <button class="odin-hotspot odin-hotspot-right" style="--hotspot-x: 77%; --hotspot-y: 57%;" type="button" aria-expanded="false" aria-label="Show details: Micro-D Connector" aria-describedby="odin-detail-micro-d" data-odin-hotspot>
+                                <span class="odin-hotspot-dot" aria-hidden="true"></span>
+                                <span class="odin-hotspot-panel" id="odin-detail-micro-d">
+                                    <small>08 / Interface</small>
+                                    <strong>Micro-D Connector</strong>
+                                    <span>31-pin female Micro-D connector offers RS422 (RS485, CAN/MCAN and USART) communications protocols.</span>
+                                </span>
+                            </button>
+                        </div>
+                        <p>Hover, focus or tap a node to inspect the hardware <span>· Image and specifications: ODIN Space</span></p>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-models reveal">
+                    <div class="project-topline"><span>Astroscale</span><span>Prototyping</span></div>
+                    <div class="project-number">05</div>
+                    <h3>Trade-show and GNC testbed models</h3>
+                    <p>Designed and built 3D-printed and scaled servicer and client-spacecraft models for trade-show demonstrations and GNC and computer-vision simulations. In the testbeds, the client models are manipulated using three-axis motorised gimbals that I designed, built and integrated; I also developed the embedded firmware and operator UI used to control them.</p>
+                    <figure class="project-evidence">
+                        <a href="https://www.linkedin.com/posts/astroscale_we-were-proud-to-join-partners-from-across-activity-7482736028936654848-1mq9" target="_blank" rel="noopener noreferrer" aria-label="View Astroscale's LinkedIn post about the opening of the UK Space and Defence Gateway">
+                            <img src="assets/portfolio/astroscale-king-gateway-models.png" alt="King Charles III viewing an Astroscale servicer and client spacecraft model during a mission demonstration" loading="lazy">
+                        </a>
+                        <figcaption>
+                            <strong>Models that communicate the mission</strong>
+                            <span>King Charles III speaks with Astroscale about its missions at the official opening of the UK Space and Defence Gateway at Harwell. Image: Astroscale.</span>
+                        </figcaption>
+                    </figure>
+                    <ul class="tag-list" aria-label="Gimbal disciplines">
+                        <li>GNC simulation</li><li>Computer vision</li><li>Mechanisms</li><li>Firmware</li><li>UI</li><li>3D printing</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
         <section class="section experience-section" id="experience">
             <div class="section-heading reveal">
-                <p class="section-index">02 / Experience</p>
-                <h2>From advanced materials to on-orbit servicing.</h2>
+                <h2 class="section-index">02 / Experience</h2>
+                <p class="section-meta">2016—Present</p>
             </div>
             <div class="timeline">
                 <article class="timeline-item reveal">
@@ -241,9 +403,8 @@
 
         <section class="section capabilities-section" id="capabilities">
             <div class="section-heading reveal">
-                <p class="section-index">03 / Capabilities</p>
-                <h2>Useful at the interfaces.</h2>
-                <p>I work where mechanical, electrical and software decisions meet—keeping the whole test or flight system in view.</p>
+                <h2 class="section-index">03 / Capabilities</h2>
+                <p class="section-meta">Mechanical · embedded · test · leadership</p>
             </div>
             <div class="capability-grid">
                 <article class="capability reveal"><span>01</span><h3>Mechanical systems</h3><p>CAD, mechanisms, drawing to BS 8888, design for manufacture, structural and thermal analysis.</p></article>
@@ -259,8 +420,10 @@
 
         <section class="contact-section" id="contact">
             <div class="contact-copy reveal">
-                <p class="section-index">04 / Contact</p>
-                <h2>Let’s build something<br>that has to work.</h2>
+                <div class="section-heading contact-heading">
+                    <h2 class="section-index">04 / Contact</h2>
+                    <p class="section-meta">Greater Oxford</p>
+                </div>
                 <p>For spacecraft, robotics, test-system and multidisciplinary engineering conversations, connect with me on LinkedIn.</p>
                 <a class="button button-light" href="https://www.linkedin.com/in/nick-graham-space/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
             </div>
@@ -276,8 +439,6 @@
                     <li><img src="assets/logos/oxford-space-systems.png" alt="Oxford Space Systems" loading="lazy"></li>
                     <li><img src="assets/logos/tisics.png" alt="TISICS" loading="lazy"></li>
                     <li><img src="assets/logos/ral-space.png" alt="RAL Space" loading="lazy"></li>
-                    <li><img src="assets/logos/satellite-applications-catapult.png" alt="Satellite Applications Catapult" loading="lazy"></li>
-                    <li><img src="assets/logos/airbus.png" alt="Airbus" loading="lazy"></li>
                 </ul>
             </aside>
         </section>
