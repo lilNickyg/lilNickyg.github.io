@@ -368,7 +368,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .project-card-accent { grid-column: 1 / -1; min-height: 380px; background: #090c0e; color: var(--white); }
 .project-card-accent:hover { background: #101518; }
-.project-card-odin { display: grid; grid-template-columns: minmax(0, .8fr) minmax(560px, 1.2fr); align-items: center; gap: 48px; min-height: 500px; padding-top: 88px; }
+.project-card-odin { display: grid; grid-template-columns: minmax(0, .8fr) minmax(560px, 1.2fr); align-items: start; gap: 48px; min-height: 500px; padding-top: 72px; }
 .project-card-odin .project-number { color: rgba(255,255,255,.035); }
 .odin-project-copy { position: relative; z-index: 1; }
 .odin-project-copy h3 { margin-top: 0; }
@@ -689,7 +689,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
     .project-card-robotics { grid-template-columns: 1fr; gap: 28px; padding-top: 82px; }
     .robotics-project-image { min-height: 0; aspect-ratio: 16 / 9; }
     .robotics-project-copy { padding-right: 0; }
-    .project-card-odin { grid-template-columns: 1fr; gap: 38px; padding-top: 82px; }
+    .project-card-odin { grid-template-columns: 1fr; gap: 38px; padding-top: 68px; }
     .odin-interactive > p { display: block; margin-top: 14px; }
     .odin-interactive > p span { display: block; margin-top: 5px; text-align: left; }
     .timeline-item { grid-template-columns: 1fr; gap: 12px; }
