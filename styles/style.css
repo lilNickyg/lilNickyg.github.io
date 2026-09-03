@@ -631,6 +631,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
     }
     .hero-copy { grid-area: copy; max-width: 760px; padding: 70px max(24px, calc((100vw - 760px) / 2)) 76px; }
     .hero-gallery { grid-area: visual; min-height: 500px; aspect-ratio: 16 / 10; }
+    #wrapped-rib-flight img { object-position: 50% 18%; }
     .hero-slides::after { background: linear-gradient(0deg, rgba(7,19,31,.28), transparent 38%); }
     .hero-profile { grid-area: profile; grid-template-columns: 120px 1fr; gap: 26px; padding: 28px max(24px, calc((100vw - 760px) / 2)); }
     .hero-profile > a { display: none; }
